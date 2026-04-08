@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python للمبتدئين | دليلك للتعلم</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span>دليلك للتعلم</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../lessons.html" class="active">الدروس</a></li>
+                <li><a href="../skills.html">المهارات</a></li>
+                <li><a href="../tips.html">النصائح</a></li>
+                <li><a href="../tools.html">الأدوات</a></li>
+                <li><a href="../about.html">عني</a></li>
+                <li><a href="../contact.html">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="تبديل الوضع المظلم">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="../login.html" class="btn btn-primary btn-sm">تسجيل الدخول</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lesson Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="lesson-header-content">
+                <span class="lesson-category">برمجة</span>
+                <h1>Python للمبتدئين</h1>
+                <p class="lesson-intro">تعلم لغة البرمجة الأكثر شعبية في العالم بسهولة ومتعة</p>
+                <div class="lesson-meta">
+                    <span class="reading-time">⏱️ 15 دقيقة قراءة</span>
+                    <span class="difficulty">مستوى: مبتدئ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Lesson Content -->
+    <section class="lesson-detail-section">
+        <div class="container">
+            <div class="lesson-content-wrapper">
+                <!-- Main Content -->
+                <article class="lesson-article">
+                    <!-- Introduction -->
+                    <div class="content-block">
+                        <h2>🐍 ما هي Python؟</h2>
+                        <p>Python هي لغة برمجة عالية المستوى، سهلة التعلم، وقوية في الوقت نفسه. تم إنشاؤها في عام 1991 وتستخدم في:</p>
+                        <ul class="feature-list">
+                            <li>تطوير تطبيقات الويب</li>
+                            <li>علم البيانات والذكاء الاصطناعي</li>
+                            <li>الأتمتة والسكربتات</li>
+                            <li>تطوير الألعاب</li>
+                            <li>الحوسبة العلمية</li>
+                        </ul>
+                    </div>
+
+                    <!-- Why Python -->
+                    <div class="content-block">
+                        <h2>✨ لماذا Python؟</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <span class="benefit-icon">📖</span>
+                                <h4>سهلة القراءة</h4>
+                                <p>كود Python يشبه اللغة الإنجليزية</p>
+                            </div>
+                            <div class="benefit-card">
+                                <span class="benefit-icon">🚀</span>
+                                <h4>سريعة التعلم</h4>
+                                <p>يمكنك البدء في كتابة برامج من اليوم الأول</p>
+                            </div>
+                            <div class="benefit-card">
+                                <span class="benefit-icon">🌍</span>
+                                <h4>مجتمع ضخم</h4>
+                                <p>ملايين المبرمجين حول العالم</p>
+                            </div>
+                            <div class="benefit-card">
+                                <span class="benefit-icon">📦</span>
+                                <h4>مكتبات غنية</h4>
+                                <p>آلاف المكتبات الجاهزة للاستخدام</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First Program -->
+                    <div class="content-block">
+                        <h2>👋 أول برنامج لك</h2>
+                        <p>دعنا نبدأ ببرنامج بسيط يطبع "Hello, World!":</p>
+                        <div class="code-block">
+                            <pre><code>print("Hello, World!")</code></pre>
+                        </div>
+                        <p>هذا كل شيء! Python تجعل الأمور بسيطة للغاية.</p>
+                    </div>
+
+                    <!-- Variables -->
+                    <div class="content-block">
+                        <h2>📦 المتغيرات</h2>
+                        <p>المتغيرات هي حاويات لتخزين البيانات:</p>
+                        <div class="code-block">
+                            <pre><code># أنواع البيانات الأساسية
+name = "Ahmed"      # نص (String)
+age = 20            # رقم صحيح (Integer)
+height = 1.75       # رقم عشري (Float)
+is_student = True   # قيمة منطقية (Boolean)
+
+# طباعة المتغيرات
+print("الاسم:", name)
+print("العمر:", age)</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Operations -->
+                    <div class="content-block">
+                        <h2>➕ العمليات الحسابية</h2>
+                        <div class="code-block">
+                            <pre><code># العمليات الأساسية
+x = 10
+y = 3
+
+print(x + y)   # الجمع: 13
+print(x - y)   # الطرح: 7
+print(x * y)   # الضرب: 30
+print(x / y)   # القسمة: 3.33
+print(x // y)  # القسمة الصحيحة: 3
+print(x % y)   # باقي القسمة: 1
+print(x ** y)  # الأس: 1000</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Conditions -->
+                    <div class="content-block">
+                        <h2>🔀 جمل الشرط</h2>
+                        <div class="code-block">
+                            <pre><code>age = 18
+
+if age >= 18:
+    print("أنت بالغ")
+elif age >= 13:
+    print("أنت مراهق")
+else:
+    print("أنت طفل")</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Loops -->
+                    <div class="content-block">
+                        <h2>🔄 الحلقات</h2>
+                        <h4>حلقة for</h4>
+                        <div class="code-block">
+                            <pre><code># طباعة الأرقام من 1 إلى 5
+for i in range(1, 6):
+    print(i)
+
+# التكرار على قائمة
+fruits = ["تفاح", "موز", "برتقال"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+                        </div>
+                        
+                        <h4>حلقة while</h4>
+                        <div class="code-block">
+                            <pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Functions -->
+                    <div class="content-block">
+                        <h2>⚡ الدوال</h2>
+                        <div class="code-block">
+                            <pre><code># تعريف دالة
+def greet(name):
+    return f"مرحباً، {name}!"
+
+# استدعاء الدالة
+message = greet("محمد")
+print(message)  # مرحباً، محمد!</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Lists -->
+                    <div class="content-block">
+                        <h2>📋 القوائم</h2>
+                        <div class="code-block">
+                            <pre><code># إنشاء قائمة
+numbers = [1, 2, 3, 4, 5]
+names = ["أحمد", "محمد", "علي"]
+
+# الوصول للعناصر
+print(names[0])    # أحمد
+print(names[-1])   # علي
+
+# إضافة عنصر
+names.append("خالد")
+
+# حذف عنصر
+names.remove("محمد")</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Practice -->
+                    <div class="content-block content-block--practice">
+                        <h2>💪 تمرين عملي</h2>
+                        <p>اكتب برنامجاً يحسب معدل الطالب:</p>
+                        <div class="code-block">
+                            <pre><code>def calculate_average(grades):
+    total = sum(grades)
+    average = total / len(grades)
+    return average
+
+# اختبار
+my_grades = [85, 90, 78, 92]
+result = calculate_average(my_grades)
+print(f"المعدل: {result:.2f}")</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="content-block">
+                        <h2>📚 مصادر إضافية</h2>
+                        <ul class="resource-list">
+                            <li><a href="https://www.python.org" target="_blank">الموقع الرسمي لـ Python</a></li>
+                            <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Python Tutorial</a></li>
+                            <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Back Button -->
+                    <div class="lesson-actions">
+                        <a href="../lessons.html" class="btn btn-outline">← العودة للدروس</a>
+                    </div>
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="lesson-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>محتوى الدرس</h3>
+                        <ul class="lesson-nav">
+                            <li><a href="#intro">ما هي Python؟</a></li>
+                            <li><a href="#why">لماذا Python؟</a></li>
+                            <li><a href="#first">أول برنامج</a></li>
+                            <li><a href="#variables">المتغيرات</a></li>
+                            <li><a href="#operations">العمليات الحسابية</a></li>
+                            <li><a href="#conditions">جمل الشرط</a></li>
+                            <li><a href="#loops">الحلقات</a></li>
+                            <li><a href="#functions">الدوال</a></li>
+                            <li><a href="#lists">القوائم</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>دروس ذات صلة</h3>
+                        <ul class="related-lessons">
+                            <li><a href="programming-basics.html">أساسيات البرمجة</a></li>
+                            <li><a href="javascript-basics.html">JavaScript للمبتدئين</a></li>
+                            <li><a href="html-basics.html">HTML للمبتدئين</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Comments Section -->
+    <div class="comments-section reveal">
+        <h2 class="comments-title">التعليقات</h2>
+        <form id="commentForm" class="comment-form">
+            <input type="text" id="commentName" class="comment-input" placeholder="اسمك" required>
+            <textarea id="commentText" class="comment-input" placeholder="اكتب تعليقك هنا..." required></textarea>
+            <button type="submit" class="comment-submit">إضافة تعليق</button>
+        </form>
+        <div id="commentsList" class="comments-list">
+        <p class="no-comments">لا توجد تعليقات بعد. كن أول من يعلق!</p>
+    </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>دليلك للتعلم</h3>
+                    <p>منصتك الشاملة للتعلم والتطوير الذاتي</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../lessons.html">الدروس</a></li>
+                        <li><a href="../tips.html">النصائح</a></li>
+                        <li><a href="../about.html">عني</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2024 دليلك للتعلم</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

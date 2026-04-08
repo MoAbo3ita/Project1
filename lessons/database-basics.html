@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أساسيات قواعد البيانات | دليلك للتعلم</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">📚</span>
+                <span>دليلك للتعلم</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../lessons.html" class="active">الدروس</a></li>
+                <li><a href="../skills.html">المهارات</a></li>
+                <li><a href="../tips.html">النصائح</a></li>
+                <li><a href="../tools.html">الأدوات</a></li>
+                <li><a href="../about.html">عني</a></li>
+                <li><a href="../contact.html">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="تبديل الوضع المظلم">🌙</button>
+                <a href="../login.html" class="btn btn-primary btn-sm">تسجيل الدخول</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="lesson-header-content">
+                <span class="lesson-category">برمجة</span>
+                <h1>أساسيات قواعد البيانات</h1>
+                <p class="lesson-intro">تعلم كيفية تخزين وإدارة البيانات بفعالية</p>
+                <div class="lesson-meta">
+                    <span class="reading-time">⏱️ 14 دقيقة قراءة</span>
+                    <span class="difficulty">مستوى: مبتدئ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="lesson-detail-section">
+        <div class="container">
+            <div class="lesson-content-wrapper">
+                <article class="lesson-article">
+                    <div class="content-block">
+                        <h2>🗄️ ما هي قاعدة البيانات؟</h2>
+                        <p>قاعدة البيانات هي مجموعة منظمة من البيانات المخزنة إلكترونياً يمكن الوصول إليها وإدارتها بسهولة.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>📊 أنواع قواعد البيانات</h2>
+                        <div class="db-types">
+                            <div class="db-type">
+                                <h4>علائقية (Relational)</h4>
+                                <p>تستخدم جداول مترابطة. مثل: MySQL, PostgreSQL</p>
+                            </div>
+                            <div class="db-type">
+                                <h4>غير علائقية (NoSQL)</h4>
+                                <p>مرنة وقابلة للتوسع. مثل: MongoDB, Redis</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🔤 مفاهيم أساسية</h2>
+                        <ul class="feature-list">
+                            <li><strong>الجدول (Table):</strong> يحتوي على صفوف وأعمدة</li>
+                            <li><strong>الصف (Row):</strong> سجل واحد من البيانات</li>
+                            <li><strong>العمود (Column):</strong> حقل محدد من البيانات</li>
+                            <li><strong>المفتاح الأساسي (Primary Key):</strong> معرف فريد لكل سجل</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>💻 أوامر SQL الأساسية</h2>
+                        <div class="code-block">
+                            <pre><code>-- إنشاء جدول
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    grade VARCHAR(10)
+);
+
+-- إضافة بيانات
+INSERT INTO students (id, name, age, grade)
+VALUES (1, 'أحمد', 20, 'A');
+
+-- استرجاع البيانات
+SELECT * FROM students;
+SELECT name, grade FROM students WHERE age > 18;
+
+-- تحديث البيانات
+UPDATE students SET grade = 'A+' WHERE id = 1;
+
+-- حذف البيانات
+DELETE FROM students WHERE id = 1;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🔗 العلاقات بين الجداول</h2>
+                        <ul class="feature-list">
+                            <li><strong>واحد لواحد (1:1):</strong> كل سجل في جدول يتطابق مع سجل واحد في جدول آخر</li>
+                            <li><strong>واحد لمتعدد (1:N):</strong> سجل واحد يرتبط بعدة سجلات</li>
+                            <li><strong>متعدد لمتعدد (N:M):</strong> عدة سجلات ترتبط بعدة سجلات</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🛠️ أدوات قواعد البيانات</h2>
+                        <ul class="feature-list">
+                            <li><strong>MySQL Workbench:</strong> واجهة رسومية لـ MySQL</li>
+                            <li><strong>pgAdmin:</strong> لإدارة PostgreSQL</li>
+                            <li><strong>MongoDB Compass:</strong> لإدارة MongoDB</li>
+                            <li><strong>DBeaver:</strong> أداة متعددة المنصات</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-actions">
+                        <a href="../lessons.html" class="btn btn-outline">← العودة للدروس</a>
+                    </div>
+                </article>
+
+                <aside class="lesson-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>دروس ذات صلة</h3>
+                        <ul class="related-lessons">
+                            <li><a href="python-basics.html">Python للمبتدئين</a></li>
+                            <li><a href="programming-basics.html">أساسيات البرمجة</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>دليلك للتعلم</h3>
+                    <p>منصتك الشاملة للتعلم والتطوير الذاتي</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2024 دليلك للتعلم</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

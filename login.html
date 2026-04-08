@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سجل في منصة دليلك للتعلم">
+  <title>تسجيل | دليلك للتعلم</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-logo">LG</div>
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">LG</div>
+        <span>دليلك للتعلم</span>
+      </a>
+      
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="lessons.html" class="nav-link">الدروس</a></li>
+        <li><a href="skills.html" class="nav-link">المهارات</a></li>
+        <li><a href="tips.html" class="nav-link">نصائح</a></li>
+        <li><a href="tools.html" class="nav-link">أدوات</a></li>
+        <li><a href="about.html" class="nav-link">عنّي</a></li>
+        <li><a href="contact.html" class="nav-link">تواصل</a></li>
+        <li><a href="login.html" class="nav-link active">تسجيل</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="تبديل الوضع">🌙</button>
+        <button id="hamburger" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Container -->
+  <div class="login-container" style="padding-top: 100px; min-height: auto;">
+    <div class="login-card reveal">
+      <div class="login-logo">
+        <div class="login-logo-icon">LG</div>
+        <h1 class="login-title">انضم إلينا</h1>
+        <p class="login-subtitle">سجل بياناتك للانضمام إلى مجتمع دليلك للتعلم</p>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="name">الاسم الكامل *</label>
+          <input type="text" id="name" class="form-input" placeholder="أدخل اسمك الكامل" required>
+          <div id="nameError" class="form-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">البريد الإلكتروني *</label>
+          <input type="email" id="email" class="form-input" placeholder="example@email.com" required>
+          <div id="emailError" class="form-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phone">رقم الهاتف *</label>
+          <input type="tel" id="phone" class="form-input" placeholder="01xxxxxxxxx" required>
+          <div id="phoneError" class="form-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="course">الكورس المهتم به *</label>
+          <select id="course" class="form-select" required>
+            <option value="">اختر الكورس</option>
+            <option value="programming">أساسيات البرمجة</option>
+            <option value="web-development">تطوير الويب</option>
+            <option value="study-skills">مهارات الدراسة</option>
+            <option value="time-management">إدارة الوقت</option>
+            <option value="other">أخرى</option>
+          </select>
+          <div id="courseError" class="form-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">رسالة (اختياري)</label>
+          <textarea id="message" class="form-textarea" placeholder="أخبرنا أكثر عن اهتماماتك أو اطرح أي سؤال..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">إرسال</button>
+      </form>
+
+      <div id="successMessage" class="success-message">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">تم الإرسال بنجاح!</h3>
+        <p class="success-text">شكراً لتسجيلك. سنتواصل معك قريباً.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section class="section" style="background: var(--surface);">
+    <div class="section-header reveal">
+      <span class="section-label">لماذا تنضم إلينا؟</span>
+      <h2 class="section-title">مميزات التسجيل</h2>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">📚</div>
+        <h3 class="feature-title">محتوى حصري</h3>
+        <p class="feature-description">احصل على محتوى تعليمي حصري ومحدث باستمرار</p>
+      </div>
+      
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔔</div>
+        <h3 class="feature-title">تنبيهات</h3>
+        <p class="feature-description">تلقى إشعارات بالدروس والمقالات الجديدة</p>
+      </div>
+      
+      <div class="feature-card reveal">
+        <div class="feature-icon">💬</div>
+        <h3 class="feature-title">مجتمع</h3>
+        <p class="feature-description">انضم إلى مجتمع من الطلاب المهتمين بالتعلم</p>
+      </div>
+      
+      <div class="feature-card reveal">
+        <div class="feature-icon">🎯</div>
+        <h3 class="feature-title">مسارات تعليمية</h3>
+        <p class="feature-description">اتبع مسارات تعليمية منظمة لتحقيق أهدافك</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section footer-about">
+        <h3>عن دليلك للتعلم</h3>
+        <p>منصة تعليمية متكاملة تهدف إلى مساعدة الطلاب على التعلم بفعالية من خلال توفير محتوى تعليمي متميز وأدوات تفاعلية.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1GAefP5wkX/" target="_blank" class="social-link">📘</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">💬</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>روابط سريعة</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="lessons.html">الدروس</a></li>
+          <li><a href="skills.html">المهارات</a></li>
+          <li><a href="tips.html">نصائح</a></li>
+          <li><a href="tools.html">أدوات</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>تواصل معنا</h3>
+        <ul class="footer-contact">
+          <li>📞 01559160083</li>
+          <li>✉️ midoaboeita235@gmail.com</li>
+          <li>🌐 <a href="https://www.facebook.com/share/1GAefP5wkX/" target="_blank" style="color: inherit;">فيسبوك</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 جميع الحقوق محفوظة - دليلك للتعلم</p>
+      <p>By Mohamed Hany Aboeita</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="scroll-top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
