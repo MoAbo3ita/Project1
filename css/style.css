@@ -2219,38 +2219,38 @@ input, textarea, select {
 
 .info-box--tip {
   border-right-color: var(--accent);
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  background: linear-gradient(135deg, #4d4d4d 0%, #4b4b4b 100%);
 }
 
 .info-box--tip h3 {
-  color: #92400e;
+  color: #ffac05;
 }
 
 .info-box--warning {
   border-right-color: var(--error);
-  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  background: linear-gradient(135deg, #3d2323 0%, #3e3e3e 100%);
 }
 
 .info-box--warning h3 {
-  color: #991b1b;
+  color: #ffffff;
 }
 
 .info-box--success {
   border-right-color: var(--success);
-  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  background: linear-gradient(135deg, #5d5e5d 0%, #454545 100%);
 }
 
 .info-box--success h3 {
-  color: #065f46;
+  color: hsl(44, 100%, 50%);
 }
 
 .info-box--science {
   border-right-color: var(--secondary);
-  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  background: linear-gradient(135deg, #414141 0%, #545454 100%);
 }
 
 .info-box--science h3 {
-  color: #3730a3;
+  color: #fff700;
 }
 
 /* ============================================
@@ -2515,6 +2515,7 @@ input, textarea, select {
   background: var(--surface-hover);
   color: var(--primary);
 }
+
 
 /* ============================================
    Back Button
