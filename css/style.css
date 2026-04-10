@@ -1957,3 +1957,634 @@ input, textarea, select {
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
+/* ============================================
+   دليلك للتعلم - Lessons & Content Styles
+   تنسيق صفحات الدروس والنصائح والمهارات
+   ============================================ */
+
+/* ============================================
+   Page Header Styles
+   ============================================ */
+.page-header {
+  background: var(--primary-gradient);
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
+}
+
+.lesson-header-content,
+.tip-header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lesson-category,
+.tip-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.lesson-intro,
+.tip-intro {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.lesson-meta,
+.tip-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.lesson-meta span,
+.tip-meta span {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.difficulty {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+}
+
+/* ============================================
+   Content Layout
+   ============================================ */
+.lesson-detail-section,
+.tip-detail-section {
+  padding: 4rem 2rem;
+  background: var(--background);
+}
+
+.lesson-content-wrapper,
+.tip-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.lesson-article,
+.tip-article {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+/* ============================================
+   Content Blocks
+   ============================================ */
+.content-block {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--surface-hover);
+}
+
+.content-block:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.content-block h2 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.content-block h3 {
+  color: var(--primary);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+.content-block h4 {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.content-block p {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.content-block ul,
+.content-block ol {
+  margin: 1.25rem 0;
+  padding-right: 1.5rem;
+}
+
+.content-block li {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+/* ============================================
+   Feature List
+   ============================================ */
+.feature-list {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.feature-list li {
+  position: relative;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-list li::before {
+  content: '✓';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* ============================================
+   Code Blocks
+   ============================================ */
+.code-block {
+  background: #1e293b;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-lg);
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.code-block code {
+  color: #e2e8f0;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Syntax highlighting */
+.code-block .comment { color: #64748b; }
+.code-block .keyword { color: #c084fc; }
+.code-block .string { color: #86efac; }
+.code-block .number { color: #fcd34d; }
+.code-block .function { color: #60a5fa; }
+
+/* ============================================
+   Info Boxes
+   ============================================ */
+.info-box {
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-right: 4px solid var(--primary);
+}
+
+.info-box h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-box p,
+.info-box ul {
+  margin: 0;
+}
+
+.info-box--tip {
+  border-right-color: var(--accent);
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.info-box--tip h3 {
+  color: #92400e;
+}
+
+.info-box--warning {
+  border-right-color: var(--error);
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+}
+
+.info-box--warning h3 {
+  color: #991b1b;
+}
+
+.info-box--success {
+  border-right-color: var(--success);
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+}
+
+.info-box--success h3 {
+  color: #065f46;
+}
+
+.info-box--science {
+  border-right-color: var(--secondary);
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+}
+
+.info-box--science h3 {
+  color: #3730a3;
+}
+
+/* ============================================
+   Cards & Grids
+   ============================================ */
+.benefits-grid,
+.principles-grid,
+.branches-grid,
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.benefit-card,
+.principle-card,
+.branch-card,
+.technique-card {
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid var(--surface-hover);
+}
+
+.benefit-card:hover,
+.principle-card:hover,
+.branch-card:hover,
+.technique-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.benefit-icon,
+.principle-icon,
+.branch-icon,
+.technique-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h4,
+.principle-card h4,
+.branch-card h4,
+.technique-card h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p,
+.principle-card p,
+.branch-card p,
+.technique-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ============================================
+   Steps Container
+   ============================================ */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: var(--surface-alt);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border-right: 3px solid var(--primary);
+}
+
+.step-num {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.step-item h4 {
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.step-item p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   Timeline
+   ============================================ */
+.timeline {
+  position: relative;
+  padding-right: 2rem;
+  margin: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--primary-light);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-right: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid var(--surface);
+}
+
+.timeline-content {
+  background: var(--surface-alt);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.timeline-content h3 {
+  color: var(--primary);
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding-right: 1.25rem;
+}
+
+/* ============================================
+   Comparison Table
+   ============================================ */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem 1.25rem;
+  text-align: right;
+  border-bottom: 1px solid var(--surface-hover);
+}
+
+.comparison-table th {
+  background: var(--primary-gradient);
+  color: white;
+  font-weight: 600;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table .positive {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.comparison-table .negative {
+  color: var(--error);
+  font-weight: 600;
+}
+
+/* ============================================
+   Sidebar Styles
+   ============================================ */
+.lesson-sidebar,
+.tip-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-widget {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.sidebar-widget h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--surface-hover);
+}
+
+.lesson-nav,
+.related-lessons,
+.related-tips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-nav li,
+.related-lessons li,
+.related-tips li {
+  margin-bottom: 0.5rem;
+}
+
+.lesson-nav a,
+.related-lessons a,
+.related-tips a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.lesson-nav a:hover,
+.related-lessons a:hover,
+.related-tips a:hover {
+  background: var(--surface-hover);
+  color: var(--primary);
+}
+
+/* ============================================
+   Back Button
+   ============================================ */
+.lesson-actions,
+.tip-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--surface-hover);
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 992px) {
+  .lesson-content-wrapper,
+  .tip-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .lesson-sidebar,
+  .tip-sidebar {
+    position: static;
+    order: -1;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .lesson-intro,
+  .tip-intro {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 6rem 1.5rem 3rem;
+  }
+  
+  .lesson-detail-section,
+  .tip-detail-section {
+    padding: 2rem 1rem;
+  }
+  
+  .lesson-article,
+  .tip-article {
+    padding: 1.5rem;
+  }
+  
+  .content-block h2 {
+    font-size: 1.4rem;
+  }
+  
+  .benefits-grid,
+  .principles-grid,
+  .branches-grid,
+  .techniques-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .comparison-table-wrapper {
+    font-size: 0.9rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem;
+  }
+}
